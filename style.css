@@ -19,3 +19,8 @@
 .img-section img {
     width: 100%;
 }
+
+.article-exp img {
+    width: 200px;
+    height: 100%;
+}
