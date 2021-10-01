@@ -14,108 +14,123 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="menu">
             <a href="#">perfil</a>
-            <a href="#">projetos</a>
-            <a href="#">experiência</a>
-            <a href="#">repositórios github</a>
-            <a href="#">conteúdo</a>
+            <a href="#"> • projetos</a>
+            <a href="#"> • experiência</a>
+            <a href="#"> • repositórios github</a>
+            <a href="#"> • conteúdo</a>
         </nav>
         <div id="pesquisar">
             <input type="text" placeholder="Pesquisar" />
         </div>
     </header>
     <main>
+        <div class="container">
+            <section class="card">
+                <div class="img-main">
+                    <img src="./imgs/nebulosa.jpg" alt="Foto de nebulosa">
+                </div>
+                <div class="descricao">
+                    <h2>Nome do Perfil</h2>
+                    <p><strong>Objetivos:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut deleniti amet
+                        pariatur
+                        tempora ad, laudantium enim quidem! Obcaecati, odio quod. Sint illo ad optio iusto. Deleniti
+                        dolorem
+                        nam laboriosam?</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/">
+                        <img src="./imgs/facebook.svg" alt="Logo Facebook">
+                    </a>
+                    <a href="https://twitter.com/">
+                        <img src="./imgs/twitter.svg" alt="Logo Twitter">
+                    </a>
+                    <a href="https://instagram.com/">
+                        <img src="./imgs/instagram.svg" alt="Logo Instagram">
+                    </a>
+                </div>
+            </section>
+            <section class="card">
+                <header>
+                    <h1>Projetos</h1>
+                    <select id="projetos" name="select" placeholder="Pesquisar">
+                        <option disabled selected>Selecione uma opção</option>
+                        <option>Teste 1</option>
+                        <option>Teste 2</option>
+                        <option>Teste 3</option>
+                    </select>
+                </header>
+                <main>
+                    <section class="img-section">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Projeto A - 2021</h3>
+                    </section>
+                    <section class="img-section">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Projeto B - 2021</h3>
+                    </section>
+                    <section class="img-section">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Projeto C - 2021</h3>
+                    </section>
+                    <section class="img-section">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Projeto D - 2021</h3>
+                    </section>
+                </main>
+                <footer>
+                    <button>Carregar mais projetos</button>
+                </footer>
+            </section>
+            <section>
+                <h1>Experiência</h1>
+                <main>
+                    <article class="article-exp">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Cargo / Função</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
+                            aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam?
+                            Dicta
+                            nulla earum provident incidunt sed.</p>
+                        <span>Período: 05/2016 até 05/2021</span>
+                    </article>
+                    <article class="article-exp">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Cargo / Função</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
+                            aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam?
+                            Dicta
+                            nulla earum provident incidunt sed.</p>
+                        <span>Período: 05/2016 até 05/2021</span>
+                    </article>
+                    <article class="article-exp">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Cargo / Função</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
+                            aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam?
+                            Dicta
+                            nulla earum provident incidunt sed.</p>
+                        <span>Período: 05/2016 até 05/2021</span>
+                    </article>
+                    <article class="article-exp">
+                        <img src="./imgs/nebulosa.jpg" alt="exemplo">
+                        <h3>Cargo / Função</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
+                            aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam?
+                            Dicta
+                            nulla earum provident incidunt sed.</p>
+                        <span>Período: 05/2016 até 05/2021</span>
+                    </article>
+                </main>
+                <footer>
+                    <button>Carregar mais experiências</button>
+                </footer>
+            </section>
+        </div>
         <section>
-            <div class="img-main">
-                <img src="./imgs/nebulosa.jpg" alt="Foto de nebulosa">
-            </div>
-            <div class="descricao-main">
-                <h2>Nome do Perfil</h2>
-                <p>Objetivos: Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio aut deleniti amet pariatur
-                    tempora ad, laudantium enim quidem! Obcaecati, odio quod. Sint illo ad optio iusto. Deleniti dolorem
-                    nam laboriosam?</p>
-            </div>
-            <div class="redes-sociais">
-                <a href="#">Facebook</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
-            </div>
-        </section>
-        <section>
-            <header>
-                <h1>Projetos</h1>
-                <select name="select" placeholder="Pesquisar">
-                    <option disabled selected>Selecione uma opção</option>
-                    <option>Teste 1</option>
-                    <option>Teste 2</option>
-                    <option>Teste 3</option>
-                </select>
-            </header>
-            <main>
-                <section class="img-section">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Projeto A - 2021</h3>
-                </section>
-                <section class="img-section">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Projeto B - 2021</h3>
-                </section>
-                <section class="img-section">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Projeto C - 2021</h3>
-                </section>
-                <section class="img-section">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Projeto D - 2021</h3>
-                </section>
-            </main>
-            <footer>
-                <button>Carregar mais projetos</button>
-            </footer>
-        </section>
-        <section>
-            <h1>Experiência</h1>
-            <main>
-                <article class="article-exp">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Cargo / Função</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
-                        aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam? Dicta
-                        nulla earum provident incidunt sed.</p>
-                    <span>Período: 05/2016 até 05/2021</span>
-                </article>
-                <article class="article-exp">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Cargo / Função</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
-                        aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam? Dicta
-                        nulla earum provident incidunt sed.</p>
-                    <span>Período: 05/2016 até 05/2021</span>
-                </article>
-                <article class="article-exp">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Cargo / Função</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
-                        aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam? Dicta
-                        nulla earum provident incidunt sed.</p>
-                    <span>Período: 05/2016 até 05/2021</span>
-                </article>
-                <article class="article-exp">
-                    <img src="./imgs/nebulosa.jpg" alt="exemplo">
-                    <h3>Cargo / Função</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolores ullam ad dolor vero
-                        aut, dolorum tempore, doloremque accusantium exercitationem saepe adipisci aliquam magnam? Dicta
-                        nulla earum provident incidunt sed.</p>
-                    <span>Período: 05/2016 até 05/2021</span>
-                </article>
-            </main>
-            <footer>
-                <button>Carregar mais experiências</button>
-            </footer>
-        </section>
-        <section>
+
             <h1>Repositórios Github</h1>
             <main>
                 <article>
@@ -144,56 +159,59 @@
                 <button>Carregar mais repositórios</button>
             </footer>
         </section>
-        <section>
-            <h1>Recomendação de Conteúdo</h1>
-            <main>
-                <article>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0d0SUjDNW20"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <h3><b>Vídeo: </b>Descrição</h3>
-                    <p><b>Diretor: </b>Nome do diretor</p>
-                    <span>
-                        <p><b>Roteiro: </b>Nome do roteirista</p>
-                        <p><b>Estreia: </b>2020</p>
-                    </span>
-                </article>
-                <article>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0tG-06TQVHs"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <h3><b>Vídeo: </b>Descrição</h3>
-                    <p><b>Diretor: </b>Nome do diretor</p>
-                    <span>
-                        <p><b>Roteiro: </b>Nome do roteirista</p>
-                        <p><b>Estreia: </b>2020</p>
-                    </span>
-                </article>
-                <article>
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UK4d4TsgMOk"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <h3><b>Vídeo: </b>Descrição</h3>
-                    <p><b>Diretor: </b>Nome do diretor</p>
-                    <span>
-                        <p><b>Roteiro: </b>Nome do roteirista</p>
-                        <p><b>Estreia: </b>2020</p>
-                    </span>
-                </article>
-            </main>
-            <footer>
-                <button>Carregar mais recomendações</button>
-            </footer>
-        </section>
+        <div class="container">
+
+            <section>
+                <h1>Recomendação de Conteúdo</h1>
+                <main>
+                    <article>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0d0SUjDNW20"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3><b>Vídeo: </b>Descrição</h3>
+                        <p><b>Diretor: </b>Nome do diretor</p>
+                        <span>
+                            <p><b>Roteiro: </b>Nome do roteirista</p>
+                            <p><b>Estreia: </b>2020</p>
+                        </span>
+                    </article>
+                    <article>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/0tG-06TQVHs"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3><b>Vídeo: </b>Descrição</h3>
+                        <p><b>Diretor: </b>Nome do diretor</p>
+                        <span>
+                            <p><b>Roteiro: </b>Nome do roteirista</p>
+                            <p><b>Estreia: </b>2020</p>
+                        </span>
+                    </article>
+                    <article>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UK4d4TsgMOk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h3><b>Vídeo: </b>Descrição</h3>
+                        <p><b>Diretor: </b>Nome do diretor</p>
+                        <span>
+                            <p><b>Roteiro: </b>Nome do roteirista</p>
+                            <p><b>Estreia: </b>2020</p>
+                        </span>
+                    </article>
+                </main>
+                <footer>
+                    <button>Carregar mais recomendações</button>
+                </footer>
+            </section>
+        </div>
     </main>
     <footer>
         <div>

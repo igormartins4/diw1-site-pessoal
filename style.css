@@ -1,27 +1,196 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+/* Global ====================================================================*/
+:root {
+  --bg: #333333;
+  --bg-panel: #434343;
+  --bg-header: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  --color-text: #b5b5b5;
+  --color-text-secondary: #333333;
+
+  transition: all 0.3s linear;
 }
 
+/* Elementos =================================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75w;
+}
+
+body {
+  /*background: #512BD4;*/
+  background: linear-gradient(to right, #f01428 0%, #c9284d 100%);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Cointainer =================================================================*/
+
+.container {
+  width: min(100vw, 800px);
+  margin: auto;
+}
+
+.card {
+  background-color: var(--bg);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+/* Cabeçalho =================================================================*/
+
+body .site-header {
+  border: 0.1px none var(--bg);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: normal;
+}
+
+body header .menu {
+  margin: 0.1rem;
+  font-weight: bold;
+}
+
+body header .menu a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+body header .menu a:hover {
+  text-decoration: none;
+  color: rgb(122, 121, 121);
+}
+
+body header #pesquisar {
+  width: min(100%, 800px);
+  margin-top: 1.5rem;
+}
+body header input {
+  border: 1px solid var(--bg-panel);
+  border-radius: 0.4rem;
+  color: var(--color-text);
+  font-weight: bold;
+  background: var(--bg-panel);
+  padding: 1rem;
+  width: 100%;
+}
+
+/* Primeira Seção - Descrição ================================================*/
+main .container .card {
+  color: var(--color-text);
+  padding: 1rem;
+}
+
+main .container .card h2 {
+  font-size: 1.25em;
+  margin-top: 0.5rem;
+}
+
+main .container .card p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  margin-top: 0.5rem;
+  padding: 0.1rem;
+}
+
+main section .redes-sociais {
+  margin-top: 1rem;
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  gap: 2em;
+}
+
+main section .redes-sociais img {
+  width: min(10rem, 40px);
+  background-color: #b5b5b5;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+/* Segunda Seção - Projetos ===================================================================*/
+main .container .card h1  {
+  font-size: 1.75em;
+  margin: 0.5rem;
+}
+
+main section #projetos {
+  width: min(100%, 800px);
+}
+main section select {
+  border: 1px solid var(--bg-panel);
+  border-radius: 0.4rem;
+  color: var(--color-text);
+  font-weight: bold;
+  background: var(--bg-panel);
+  width: 50px;
+  
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+main section select > option {
+  width: 100%;
+
+  color: #30cfd0;
+}
+
+
+/* Imagens ===================================================================*/
 .img-main {
-    width: 200px;
+  width: 100%;
 }
 
 .img-main img {
-    width: 100%;
+  border-radius: 0.8rem;
+
+  width: 100%;
+  border-radius: 0.8rem;
 }
 
 .img-section {
-    width: 200px;
+  width: 200px;
 }
 
 .img-section img {
-    width: 100%;
+  border-radius: 0.8rem;
+
+  width: 100%;
 }
 
 .article-exp img {
-    width: 200px;
-    height: 100%;
+  border-radius: 0.8rem;
+
+  width: 200px;
+  height: 100%;
+}
+
+.video-container {
+  width: 100%;
+  height: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
 }
