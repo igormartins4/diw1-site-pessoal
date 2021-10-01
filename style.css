@@ -50,7 +50,7 @@ body .site-header {
   text-align: center;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: normal;
@@ -104,6 +104,8 @@ main .container .card {
 main .container .card h2 {
   font-size: 1.25rem;
   margin-top: 0.5rem;
+
+  word-wrap: break-word;
 }
 
 main .container .card p {
@@ -112,6 +114,8 @@ main .container .card p {
 
   margin-top: 0.5rem;
   padding: 0.1rem;
+
+  word-wrap: break-word;
 }
 
 main section .redes-sociais {
@@ -120,7 +124,7 @@ main section .redes-sociais {
   text-align: center;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   gap: 2rem;
@@ -137,6 +141,8 @@ main section .redes-sociais img {
 main .container .card h1 {
   font-size: 1.75rem;
   margin: 0.5rem;
+
+  word-wrap: break-word;
 }
 
 main section #projetos {
@@ -156,6 +162,8 @@ main section select {
 main .container .card h3 {
   font-size: 1.1rem;
   margin: 0.5rem 0 1rem 0.5rem;
+
+  word-wrap: break-word;
 }
 
 main .container .img-section {
@@ -175,8 +183,21 @@ main .container .card button {
   background: var(--bg-panel);
   width: 100%;
 
-  padding: 1rem;
+  padding: 0.1rem;
   margin: 0.5rem 0 0.1rem;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main .container .card button::before {
+  content: "+";
+  font-size: 2rem;
+
+  width:30%;
 }
 
 /* Terceira Seção - Experiência ===================================================================*/
@@ -197,22 +218,33 @@ section .article-exp img {
 
 /* Quarta Seção - Repositórios Github ===================================================================*/
 
-
 /* Quarta Seção - Repositórios Github ===================================================================*/
 
 .video-container {
+  position: relative;
   width: 100%;
-  height: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
 }
 
 .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
+/*
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+
 /* Imagens ===================================================================*/
-
-
 
 @media (min-width: 800px) {
   html {
