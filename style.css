@@ -235,6 +235,21 @@ section .article-exp img {
   border: 0;
 }
 
+.container .card .video-article
+p, span > p {
+  line-height: 0rem;
+  margin: 1.5rem 0;
+}
+
+/* Footer ===================================================================*/
+
+@media (min-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+
 /* Imagens ===================================================================*/
 
 @media (min-width: 800px) {
