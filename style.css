@@ -96,19 +96,19 @@ body header input {
   border-radius: 0.8rem;
 }
 
-main .container .card {
+main section {
   color: var(--color-text);
   padding: 1rem;
 }
 
-main .container .card h2 {
+main section h2 {
   font-size: 1.25rem;
   margin-top: 0.5rem;
 
   word-wrap: break-word;
 }
 
-main .container .card p {
+main section p {
   font-size: 0.9rem;
   line-height: 1.5rem;
 
@@ -138,7 +138,7 @@ main section .redes-sociais img {
 }
 
 /* Segunda Seção - Projetos ===================================================================*/
-main .container .card h1 {
+main section h1 {
   font-size: 1.75rem;
   margin: 0.5rem;
 
@@ -159,7 +159,7 @@ main section select {
   margin-bottom: 0.5rem;
 }
 
-main .container .card h3 {
+main section h3 {
   font-size: 1.1rem;
   margin: 0.5rem 0 1rem 0.5rem;
 
@@ -175,7 +175,7 @@ main .container .img-section {
   width: 100%;
 }
 
-main .container .card button {
+main button {
   border: 1px solid var(--bg-panel);
   border-radius: 0.4rem;
   color: var(--color-text);
@@ -212,7 +212,7 @@ section .article-exp img {
   margin-top: 0.5rem;
 }
 
-.container .card span {
+span {
   display: block;
   margin: 1rem 0;
 
@@ -220,8 +220,13 @@ section .article-exp img {
 }
 
 /* Quarta Seção - Repositórios Github ===================================================================*/
+.repositorios {
+  background-color: var(--bg);
 
-/* Quarta Seção - Repositórios Github ===================================================================*/
+  padding: 1rem;
+}
+
+/* Quinta Seção - Repositórios Github ===================================================================*/
 
 .video-container {
   position: relative;
@@ -238,7 +243,7 @@ section .article-exp img {
   border: 0;
 }
 
-.container .card .video-article p,
+section .video-article p,
 span > p {
   line-height: 0rem;
   margin: 1.5rem 0;
