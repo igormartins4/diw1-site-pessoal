@@ -9,7 +9,7 @@
   transition: all 0.3s linear;
 }
 
-/* Elrementos =================================================================*/
+/* Elementos =================================================================*/
 
 * {
   margin: 0;
@@ -22,7 +22,6 @@ html {
 }
 
 body {
-  /*background: #512BD4;*/
   background: linear-gradient(to right, #f01428 0%, #c9284d 100%);
   font-family: "Poppins", sans-serif;
 }
@@ -266,7 +265,7 @@ footer .footer-container p {
   text-align: center;
 }
 
-/* Imagens ===================================================================*/
+/* Responsivo ===================================================================*/
 
 @media (min-width: 800px) {
   html {
