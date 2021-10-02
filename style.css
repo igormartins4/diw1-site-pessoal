@@ -271,4 +271,56 @@ footer .footer-container p {
   html {
     font-size: 87.5%;
   }
+
+  /* Cabeçalho =========================================================*/
+
+  body .site-header {
+    border: 0.1px solid var(--bg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  body header #pesquisar {
+    width: min(100%, 300px);
+  }
+
+  /* Primeira Seção - Descrição ================================================*/
+  .container-descricao {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "imagem texto texto"
+      "imagem . ."
+      "imagem redes redes";
+    align-content: stretch;
+    justify-content: start;
+    align-items: center;
+    justify-items: start;
+  }
+
+  .img-descricao {
+    width: 20rem;
+
+    grid-area: imagem;
+    grid-row-end: span 2;
+  }
+
+  .img-descricao img {
+    border-radius: 0.8rem;
+
+    width: 100%;
+    border-radius: 0.8rem;
+  }
+  .descricao {
+    grid-area: texto;
+  }
+
+  main section .redes-sociais {
+    grid-area: redes;
+  }
 }
