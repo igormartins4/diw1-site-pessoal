@@ -185,9 +185,6 @@ main button {
   margin: 0.5rem 0 0.1rem;
 
   display: flex;
-  flex-direction: row;
-
-  align-items: center;
   justify-content: center;
 }
 
@@ -265,14 +262,14 @@ footer .footer-container p {
   text-align: center;
 }
 
-/* Responsivo ===================================================================*/
+/* Responsivo ===============================================================================*/
 
 @media (min-width: 800px) {
   html {
     font-size: 87.5%;
   }
 
-  /* Cabeçalho =========================================================*/
+  /* Cabeçalho ===============================================================*/
 
   body .site-header {
     border: 0.1px solid var(--bg);
@@ -288,7 +285,7 @@ footer .footer-container p {
     width: min(100%, 300px);
   }
 
-  /* Primeira Seção - Descrição ================================================*/
+  /* Primeira Seção - Descrição ==============================================*/
   .container-descricao {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -322,5 +319,29 @@ footer .footer-container p {
 
   main section .redes-sociais {
     grid-area: redes;
+  }
+
+  /* Segunda Seção - Projetos ===================================================================*/
+  main section header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem;
+  }
+  main section #projetos {
+    width: min(35%, 800px);
+  }
+  main section main {
+    display: flex;
+  }
+  main footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main footer button {
+    width: min(40%, 100%);
+
+    align-items: center;
   }
 }
