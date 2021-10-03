@@ -26,8 +26,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Cointainer =================================================================*/
-
+/* Container =================================================================*/
 .container {
   width: min(100vw, 800px);
   margin: auto;
@@ -41,9 +40,7 @@ body {
 }
 
 /* Cabeçalho =================================================================*/
-
 body .site-header {
-  border: 0.1px none var(--bg);
   padding: 1rem;
   margin-bottom: 1rem;
   text-align: center;
@@ -101,14 +98,14 @@ main section {
 }
 
 main section h2 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
 
   word-wrap: break-word;
 }
 
 main section p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 
   margin-top: 0.5rem;
@@ -138,7 +135,7 @@ main section .redes-sociais img {
 
 /* Segunda Seção - Projetos ===================================================================*/
 main section h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   margin: 0.5rem;
 
   word-wrap: break-word;
@@ -159,7 +156,7 @@ main section select {
 }
 
 main section h3 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   margin: 0.5rem 0 1rem 0.5rem;
 
   word-wrap: break-word;
@@ -200,6 +197,15 @@ button span#mais {
 }
 
 /* Terceira Seção - Experiência ===================================================================*/
+
+section .article-exp {
+  background: var(--bg-panel);
+  border-radius: 0.8rem;
+
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
 section .article-exp img {
   border-radius: 0.8rem;
   width: 100%;
@@ -217,6 +223,7 @@ span {
 /* Quarta Seção - Repositórios Github ===================================================================*/
 .repositorios {
   background-color: var(--bg);
+  width: 100%;
 
   padding: 1rem;
 }
@@ -261,7 +268,7 @@ footer .footer-container p {
 
 /* Responsivo ===============================================================================*/
 
-@media (min-width: 800px) {
+@media (min-width: 950px) {
   html {
     font-size: 87.5%;
   }
@@ -272,15 +279,16 @@ footer .footer-container p {
   }
 
   /* Cabeçalho ===============================================================*/
-
   body .site-header {
-    border: 0.1px solid var(--bg);
     padding: 1rem;
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: baseline;
+
+    width: min(100vw, 950px);
+    margin: auto;
   }
 
   body header #pesquisar {
@@ -288,39 +296,26 @@ footer .footer-container p {
   }
 
   /* Primeira Seção - Descrição ==============================================*/
+  .container-perfil {
+    display: flex;
+    gap: 5rem;
+  }
   .container-descricao {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "imagem texto texto"
-      "imagem . ."
-      "imagem redes redes";
-    align-content: stretch;
-    justify-content: start;
-    align-items: center;
-    justify-items: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
   }
 
   .img-descricao {
     width: 20rem;
-
-    grid-area: imagem;
-    grid-row-end: span 2;
   }
 
   .img-descricao img {
     border-radius: 0.8rem;
 
     width: 100%;
-    border-radius: 0.8rem;
-  }
-  .descricao {
-    grid-area: texto;
-  }
-
-  main section .redes-sociais {
-    grid-area: redes;
+    object-fit: cover;
   }
 
   /* Segunda Seção - Projetos ================================================*/
@@ -353,49 +348,45 @@ footer .footer-container p {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
-
-    row-gap: 2rem;
+    
+    margin: 0;
   }
 
   section main .article-exp {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas:
-      "logo titulo titulo"
-      "logo texto texto";
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
+      "logo titulo descricao";
+    gap: 1rem;
 
     align-items: center;
-  }
-
-  main .article-exp img {
-    height: 100%;
-    object-fit: cover;
-
-    grid-area: logo;
   }
 
   main .article-exp h3 {
     grid-area: titulo;
   }
 
-  main .article-exp .container-texto-exp {
-    grid-area: texto;
+  main .article-exp img {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+
+    grid-area: logo;
+  }
+
+  main .article-exp .container-texto-exp { 
+    grid-area: descricao;
   }
 
   /* Quarta Seção - Repositórios =============================================*/
   section .container-repo {
-    width: min(100vw, 950px);
+    width: min(100vw, 930px);
     margin: auto;
   }
 
   section .container-repo main {
     column-gap: 2rem;
-  }
-
-  section .container-repo footer {
-    padding-right: 0.5rem;
   }
 
   /* Sexta Seção - Recomendação de Conteúdo ==================================*/
@@ -406,7 +397,6 @@ footer .footer-container p {
   section main.container-recomendacoes .video-container {
     height: 14rem;
     object-fit: cover;
-
   }
   .video-container {
     position: relative;
