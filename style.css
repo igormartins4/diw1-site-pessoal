@@ -321,7 +321,7 @@ footer .footer-container p {
     grid-area: redes;
   }
 
-  /* Segunda Seção - Projetos ===================================================================*/
+  /* Segunda Seção - Projetos ================================================*/
   main section header {
     display: flex;
     justify-content: space-between;
@@ -341,7 +341,44 @@ footer .footer-container p {
   }
   main footer button {
     width: min(40%, 100%);
+    margin-top: 3rem;
 
     align-items: center;
+  }
+  /* Terceira Seção - Experiência ============================================*/
+  main section .experiencias {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+
+    row-gap: 2rem;
+  }
+
+  section main .article-exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "logo titulo titulo"
+      "logo texto texto";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+
+    align-items: center;
+  }
+
+  main .article-exp img {
+    height: 100%;
+    object-fit: cover;
+
+    grid-area: logo;
+  }
+
+  main .article-exp h3 {
+    grid-area: titulo;
+  }
+
+  main .article-exp .container-texto-exp {
+    grid-area: texto;
   }
 }
