@@ -381,4 +381,18 @@ footer .footer-container p {
   main .article-exp .container-texto-exp {
     grid-area: texto;
   }
+
+  /* Quarta Seção - Repositórios =============================================*/
+  section .container-repo {
+    width: min(100vw, 800px);
+    margin: auto;
+  }
+
+  section .container-repo main {
+    column-gap: 2rem;
+  }
+
+  section .container-repo footer {
+    padding-right: 2rem;
+  }
 }
