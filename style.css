@@ -153,6 +153,8 @@ main section select {
 
   padding: 1rem;
   margin-bottom: 0.5rem;
+
+  cursor: pointer;
 }
 
 main section h3 {
@@ -183,6 +185,8 @@ main button {
 
   display: flex;
   justify-content: center;
+
+  cursor: pointer;
 }
 
 button span {
